@@ -7,8 +7,6 @@ import Carousel from "../Components/Carousel";
 import CarouselItem from "../Components/CarouselItem";
 import Footer from "../Components/Footer";
 
-import ApiVS from "../Components/ApiVS";
-
 import "../assets/styles/App.scss";
 
 const App = () => {
@@ -24,7 +22,6 @@ const App = () => {
 
 	return (
 		<div className="App">
-			<ApiVS />
 			<Header />
 			<Search />
 

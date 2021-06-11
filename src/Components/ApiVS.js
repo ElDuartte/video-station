@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../assets/styles/components/ApiVS.scss";
+import "../assets/styles/components/CarouselItem.scss";
 
 class ApiVS extends React.Component {
 	state = {
@@ -19,14 +20,14 @@ class ApiVS extends React.Component {
 				{this.state.loading || !this.state.trends ? (
 					<div>loading...</div>
 				) : (
-					<div className="prueba">
-						<div>{this.state.trends.title}</div>
-						<div>{this.state.trends.type}</div>
-						<div>{this.state.trends.language}</div>
-						<div>{this.state.trends.year}</div>
-						<div>{this.state.trends.contentRating}</div>
-						<div>{this.state.trends.duration} min</div>
-						<div>{this.state.trends.description}</div>
+					<div className="carousel__details-container">
+						<div className="carousel-item__details--title">
+							{this.state.trends.title}
+						</div>
+						<div className="carousel-item__details--info">
+							{this.state.trends.year} {this.state.trends.contentRating}{" "}
+							{this.state.trends.duration} minutos
+						</div>
 					</div>
 				)}
 			</div>

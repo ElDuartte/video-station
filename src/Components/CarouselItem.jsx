@@ -4,6 +4,8 @@ import "../assets/styles/components/CarouselItem.scss";
 import playIcon from "../assets/static/play-icon.png";
 import plusIcon from "../assets/static/plus-icon.png";
 
+import ApiVS from "./ApiVS";
+
 const CarouselItem = () => (
 	<div className="carousel-item">
 		<img
@@ -24,8 +26,9 @@ const CarouselItem = () => (
 					alt="Plus Icon"
 				/>
 			</div>
-			<p className="carousel-item__details--title">Título descriptivo</p>
-			<p className="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+			{/* <p className="carousel-item__details--title">Título descriptivo</p>
+			<p className="carousel-item__details--subtitle">2019 16+ 114 minutos</p> */}
+			<ApiVS />
 		</div>
 	</div>
 );
