@@ -54,4 +54,25 @@
 	opacity: 1;
 }
 
+.carousel-item__img {
+	width: 200px;
+	height: 250px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
 
+.carousel-item__details--title {
+	color: white;
+	margin: 5px 0px 0px 0px;
+	font-size: 0.9rem;
+}
+
+.carousel-item__details--subtitle {
+	color: white;
+	font-size: 8px;
+	margin: 3px 0px;
+}
+
+.carousel-item__details--info {
+	font-size: 0.5rem;
+}
