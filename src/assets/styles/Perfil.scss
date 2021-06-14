@@ -1,12 +1,11 @@
 .container-info__perfil {
-	height: 200px;
-	width: 350px;
+	max-height: 170px;
+	max-width: 350px;
 	background-color: white;
 	display: flex;
-	padding: 2%;
+	// padding: 2%;
 	justify-content: center;
-	margin-left: max(40%);
-	margin-bottom: 5%;
+	margin: auto;
 	border-radius: 25px;
 }
 
@@ -14,4 +13,13 @@
 	height: inherit;
 	width: inherit;
 	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.container-info__perfil {
+		height: 170px;
+		width: 300px;
+		margin: auto;
+		height: 170px;
+	}
 }
