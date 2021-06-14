@@ -1,0 +1,17 @@
+.container-info__perfil {
+	height: 200px;
+	width: 350px;
+	background-color: white;
+	display: flex;
+	padding: 2%;
+	justify-content: center;
+	margin-left: max(40%);
+	margin-bottom: 5%;
+	border-radius: 25px;
+}
+
+.info-perfil {
+	height: inherit;
+	width: inherit;
+	text-align: center;
+}

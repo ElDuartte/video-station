@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import Header from "../Components/Header";
 import Search from "../Components/Search";
@@ -6,15 +6,14 @@ import Categories from "../Components/Categories";
 import Carousel from "../Components/Carousel";
 import CarouselItem from "../Components/CarouselItem";
 import Footer from "../Components/Footer";
+import { v4 as uuid_v4 } from "uuid";
 
 import useInitialState from "../hooks/useInitialState";
 
 import "../assets/styles/App.scss";
 
-const API = "https://api-video-station.herokuapp.com/initalState";
-
 const App = () => {
-	const [videos, categories] = useInitialState(API);
+	const [videos, categories] = useInitialState();
 	return (
 		<div className="App">
 			<Header />
@@ -22,8 +21,8 @@ const App = () => {
 			{categories.map(
 				(category) =>
 					videos[category].length > 0 && (
-						<Categories title={category}>
-							<Carousel>
+						<Categories title={category} key={uuid_v4()}>
+							<Carousel key={uuid_v4()}>
 								{videos[category].map((item) => (
 									<CarouselItem key={item.id} {...item} />
 								))}

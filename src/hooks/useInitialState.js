@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useInitialState = (API) => {
+const useInitialState = () => {
 	const [videos, setVideos] = useState({
 		mylist: [],
 		trends: [],
@@ -9,11 +9,16 @@ const useInitialState = (API) => {
 	const [categories, setCategories] = useState([]);
 
 	useEffect(() => {
-		fetch(API)
+		const APIMovies = "https://api-video-station.herokuapp.com/initalState";
+
+		fetch(APIMovies)
 			.then((response) => response.json())
 			.then((data) => {
 				setVideos(data);
 				setCategories(Object.keys(data));
+			})
+			.catch((Error) => {
+				console.log("Error");
 			});
 	}, []);
 	return [videos, categories];

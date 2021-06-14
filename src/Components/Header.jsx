@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../assets/styles/components/Header.scss";
 
@@ -7,18 +8,17 @@ import userIcon from "../assets/static/user-icon.png";
 
 const Header = () => (
 	<header className="header">
-		<img className="header__img" src={logo} alt="Video Station" />
+		<Link to="/">
+			<img className="header__img" src={logo} alt="Video Station logo" />
+		</Link>
 		<div className="header__menu">
 			<div className="header__menu--profile">
-				<img src={userIcon} alt="" />
-				<p>Perfil</p>
+				<img src={userIcon} alt="icono de usuario" />
+				<p>Mi cuenta</p>
 			</div>
 			<ul>
 				<li>
-					<a href="/">Cuenta</a>
-				</li>
-				<li>
-					<a href="/">Cerrar Sesión</a>
+					<Link to="/perfil">Mi Lista</Link>
 				</li>
 			</ul>
 		</div>
