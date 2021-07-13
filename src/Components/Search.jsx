@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../assets/styles/components/Search.scss";
+// import "../assets/styles/components/Search.scss";
 
 const Search = () => (
 	<section className="main">

@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: $main-font;
+	background-image: linear-gradient(
+		to top,
+		#845ec2,
+		#0085e4,
+		#00a2e5,
+		#00b9cc,
+		#00c9a7
+	);
+	// background: #66a471;
+	// background: #8f57fd;
+}

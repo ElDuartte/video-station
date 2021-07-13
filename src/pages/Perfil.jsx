@@ -9,8 +9,6 @@ import { v4 as uuid_v4 } from "uuid";
 
 import useInitialState from "../hooks/useInitialState";
 
-import "../assets/styles/Perfil.scss";
-
 const Perfil = () => {
 	const [videos, categories] = useInitialState();
 	return (

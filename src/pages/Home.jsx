@@ -10,7 +10,7 @@ import { v4 as uuid_v4 } from "uuid";
 
 import useInitialState from "../hooks/useInitialState";
 
-import "../assets/styles/App.scss";
+import "../assets/scss/main.scss";
 
 const App = () => {
 	const [videos, categories] = useInitialState();
