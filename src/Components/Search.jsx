@@ -1,10 +1,8 @@
 import React from "react";
 
-// import "../assets/styles/components/Search.scss";
-
 const Search = () => (
 	<section className="main">
-		<h2 className="main__title">🤔¿Qué vas a ver hoy? 🤔</h2>
+		<h1 className="main__title">🤔¿Qué vas a ver hoy? 🤔</h1>
 	</section>
 );
 
